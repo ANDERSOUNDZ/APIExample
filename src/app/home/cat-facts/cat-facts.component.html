@@ -1,7 +1,8 @@
 <p>
-  Cat Facts Principal!
+  <mat-card><h1><i class="material-icons">
+    picture_in_picture
+    </i> - Cat Facts Principal!</h1></mat-card>
 </p>
-<br>
 <p>
-  <app-fact-item></app-fact-item>
+  <app-fact-item *ngFor="let item of factList" [fact]="item"></app-fact-item>
 </p>
